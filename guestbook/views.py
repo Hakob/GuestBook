@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from .models import Comment 
 from .forms import CommentForm
 
+
 def index(request):
     comments = Comment.objects.order_by('-date_added')
 
